@@ -260,7 +260,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   soulPrefab: {fileID: 0}
-  speed: 1
+  speed: 3
   player: {fileID: 6344487848755692324, guid: 6cdc94286c367b84292ae73d85878a8b, type: 3}
   spawner: {fileID: 0}
   hitInput: 1

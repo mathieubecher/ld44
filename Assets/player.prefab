@@ -136,7 +136,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   soulPrefab: {fileID: 6206235317670660476, guid: eb43b13cc2c484b43aa290cc20855e28,
     type: 3}
-  speed: 2
+  speed: 3
   hit: 0
   hitingtimemax: 0.3
   spawner: {fileID: 0}

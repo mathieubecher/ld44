@@ -34,34 +34,30 @@ public class Dialog : MonoBehaviour
         if (ActionX() && player != null)
         {
             hitInput = true;
-            if (!pressX)
-            {
-                i++;
-                if (i > dialog.Count) i= 0;
-                if(i > 0) { 
-                    text.GetComponent<TextMesh>().text = dialog[i - 1 ].Replace(". ",".\n");
-                
-                    Vector2 ret = new Vector2(text.GetComponent<TextMesh>().GetComponent<Renderer>().bounds.size.x, text.GetComponent<TextMesh>().GetComponent<Renderer>().bounds.size.y);
-                    background.transform.localScale = new Vector3(ret.x * 1.45f + 0.5f, ret.y*1.45f + 0.5f, 0);
-                }
 
+            i++;
+            if (i > dialog.Count) i= 0;
+            if(i > 0) { 
+                text.GetComponent<TextMesh>().text = dialog[i - 1 ].Replace(". ",".\n");
+                
+                Vector2 ret = new Vector2(text.GetComponent<TextMesh>().GetComponent<Renderer>().bounds.size.x, text.GetComponent<TextMesh>().GetComponent<Renderer>().bounds.size.y);
+                background.transform.localScale = new Vector3(ret.x * 1.45f + 0.5f, ret.y*1.45f + 0.5f, 0);
             }
+
 
             
             //Debug.Log(transform.localPosition.x + " " + transform.localPosition.y + " " + " " +vector + " " +Math.Sqrt(Math.Pow(vector.x, 2) + Math.Pow(vector.y, 2)));
             
 
         }
-        else pressX = false;
 
         if (player != null)
         {
-            Vector3 vector = transform.localPosition + transform.parent.transform.localPosition - player.transform.localPosition;
-            if (Math.Sqrt(Math.Pow(vector.x, 2) + Math.Pow(vector.y, 2)) > 4)
+            if ((GetComponent<CircleCollider2D>().Distance(player.GetComponent<BoxCollider2D>()).distance) > 0)
             {
                 Debug.Log("sortie de la zone");
-                i = 0;
                 player = null;
+                i = 0;
             }
         }
 
