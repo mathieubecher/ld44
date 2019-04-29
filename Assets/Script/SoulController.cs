@@ -11,6 +11,7 @@ public class SoulController : MonoBehaviour
     private float TIMEPULSE =0.3f;
     private Vector3 axes = Vector3.zero;
     public GameObject sprite;
+    private float timeDelete = 30;
     // Start is called before the first frame update
     void Start()
     {
@@ -24,6 +25,7 @@ public class SoulController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        timeDelete -= Time.deltaTime;
         if (time > 0) { 
             time -= Time.deltaTime;
             GetComponent<Rigidbody2D>().velocity = axes *time;
@@ -33,6 +35,7 @@ public class SoulController : MonoBehaviour
         {
             GetComponent<Rigidbody2D>().velocity = Vector3.zero;
         }
+        if (timeDelete < 0) Destroy(this.gameObject);
     }
 
     void OnTriggerEnter2D(Collider2D other)
