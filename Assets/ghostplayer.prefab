@@ -26,7 +26,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1762429354}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: -1.5}
+  m_LocalPosition: {x: 0, y: 0, z: -5}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 4671995663442010815}
@@ -265,3 +265,9 @@ MonoBehaviour:
   spawner: {fileID: 0}
   hitInput: 1
   UIDead: {fileID: 0}
+  life: {fileID: 0}
+  strength: {fileID: 0}
+  soul: {fileID: 0}
+  lifeUI: {fileID: 0}
+  strengthUI: {fileID: 0}
+  soulUI: {fileID: 0}

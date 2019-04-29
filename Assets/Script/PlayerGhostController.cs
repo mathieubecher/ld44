@@ -55,6 +55,8 @@ public class PlayerGhostController : SimpleController
         if (hitInput) return false;
         else return (Input.GetKeyDown(KeyCode.Space) || Input.GetKeyDown(KeyCode.JoystickButton1));
     }
+    
+
 
     void Respawn()
     {

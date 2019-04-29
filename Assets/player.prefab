@@ -26,7 +26,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6300608450343532456}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: -1.5}
+  m_LocalPosition: {x: 0, y: 0, z: -5}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 6442929250247099589}
@@ -141,7 +141,9 @@ MonoBehaviour:
   hitingtimemax: 0.3
   spawner: {fileID: 0}
   ghost: {fileID: 4671995663442010803, guid: 3c05b7fd3506867469bd929ae9d52260, type: 3}
-  hitdamage: 1
+  life: {fileID: 0}
+  strength: {fileID: 0}
+  soul: {fileID: 0}
   hitleft: {fileID: 3932464062197069512, guid: 40d492f60da53b0489be3304130c9cf7, type: 3}
   hitright: {fileID: 3848914924740051987, guid: 7f5d246e48019554a903a7f7c0c301db,
     type: 3}
@@ -150,6 +152,9 @@ MonoBehaviour:
   hittop: {fileID: 3741071594404423750, guid: d99ed724436d03f4bba89864e44e76a6, type: 3}
   hitInput: 0
   UIDead: {fileID: 0}
+  lifeUI: {fileID: 0}
+  strengthUI: {fileID: 0}
+  soulUI: {fileID: 0}
 --- !u!61 &6344487848755692325
 BoxCollider2D:
   m_ObjectHideFlags: 0

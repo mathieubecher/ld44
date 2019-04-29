@@ -13,17 +13,27 @@ public class Dialog : MonoBehaviour
     private bool show = true;
     public int i = 0;
     public GameObject player;
+    private bool hitInput = false;
     // Start is called before the first frame update
     void Start()
     {
         
     }
-
+    public bool ActionX()
+    {
+        if (hitInput) return false;
+        else return (Input.GetKeyDown(KeyCode.JoystickButton2) || Input.GetKeyDown(KeyCode.E));
+    }
     // Update is called once per frame
     void Update()
     {
-        if ((Input.GetKeyDown(KeyCode.JoystickButton2) || Input.GetKeyDown(KeyCode.E)) && player != null)
+        if (!Input.GetKeyDown(KeyCode.JoystickButton2) && !Input.GetKeyDown(KeyCode.E))
         {
+            hitInput = false;
+        }
+        if (ActionX() && player != null)
+        {
+            hitInput = true;
             if (!pressX)
             {
                 i++;
