@@ -1,0 +1,16 @@
+{
+"companyName": "DefaultCompany",
+"productName": "ludum-dare",
+"productVersion": "0.1",
+"dataUrl": "webbuild.data.unityweb",
+"wasmCodeUrl": "webbuild.wasm.code.unityweb",
+"wasmFrameworkUrl": "webbuild.wasm.framework.unityweb",
+"graphicsAPI": ["WebGL 2.0","WebGL 1.0"],
+"webglContextAttributes": {"preserveDrawingBuffer": false},
+"splashScreenStyle": "Dark",
+"backgroundColor": "#231F20",
+"cacheControl": {"default": "must-revalidate"},
+"developmentBuild": true,
+"multithreading": false,
+"unityVersion": "2019.1.0f2"
+}
