@@ -31,7 +31,6 @@ public class BossController : SimpleController
             Vector3 vector = target.transform.localPosition - transform.localPosition;
             float distance = (float)Math.Sqrt(Math.Pow(vector.x, 2) + Math.Pow(vector.y, 2));
             if (((distance < portee && target.transform.localPosition.y < transform.localPosition.y) || hit) && cooldown >= 0.2) HitTarget();
-            else Move(distance, vector);
         }
         else
         {
@@ -70,8 +69,16 @@ public class BossController : SimpleController
             {
                 
                 LifeController life =  target.GetComponent(typeof(LifeController)) as LifeController;
-                
-                if(life.hit(transform.localPosition, 3)) target = null;
+
+                if (life.hit(transform.localPosition, 3))
+                {
+                    if(life.getLife()<=0)
+                    {
+                        LifeController mylife = GetComponent(typeof(LifeController)) as LifeController;
+                        mylife.reset();
+                    }
+                    target = null;
+                }
                 hitTarget = true;
             }
         }

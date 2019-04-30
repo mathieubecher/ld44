@@ -49,6 +49,10 @@ public class LifeController : MonoBehaviour
     {
         return life;
     }
+    public void reset()
+    {
+        this.life = LIFE;
+    }
     public bool hit(Vector3 origin, int damage = 1)
     {
         this.life -= damage;

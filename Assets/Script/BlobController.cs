@@ -12,8 +12,8 @@ public class BlobController : SimpleController
     private Animator anim;
     private Vector3 axes;
     private float wait;
-    public int MAXSOUL = 3;
-
+    public int MAXSOUL = 2;
+    
 
 
 
@@ -23,8 +23,9 @@ public class BlobController : SimpleController
         
         this.anim = GetComponent<Animator>();
         this.progress = new PlayerProgress();
-        this.progress.soul = MAXSOUL;
-        this.progress.MAXLIFE = 2;
+        
+        this.progress.soul = (int)Math.Floor(r.NextDouble() * MAXSOUL);
+        this.progress.MAXLIFE = 5;
         this.progress.HITDAMAGE = 1;
     }
 

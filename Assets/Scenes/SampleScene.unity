@@ -386,6 +386,11 @@ PrefabInstance:
       propertyPath: weight
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3187869742367742240, guid: c33c27f84e5499c48a3387df3f795856,
+        type: 3}
+      propertyPath: LIFE
+      value: 300
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c33c27f84e5499c48a3387df3f795856, type: 3}
 --- !u!1001 &210551865
@@ -4314,6 +4319,21 @@ PrefabInstance:
       propertyPath: dialog.Array.data[6]
       value: 
       objectReference: {fileID: 0}
+    - target: {fileID: 2143906208805383913, guid: 902a43d44318961489211df67b632007,
+        type: 3}
+      propertyPath: m_Radius
+      value: 2.11
+      objectReference: {fileID: 0}
+    - target: {fileID: 2143906208805383913, guid: 902a43d44318961489211df67b632007,
+        type: 3}
+      propertyPath: m_Offset.x
+      value: 0.15
+      objectReference: {fileID: 0}
+    - target: {fileID: 2143906208805383913, guid: 902a43d44318961489211df67b632007,
+        type: 3}
+      propertyPath: m_Offset.y
+      value: -0.83
+      objectReference: {fileID: 0}
     - target: {fileID: 1958304335383286483, guid: 902a43d44318961489211df67b632007,
         type: 3}
       propertyPath: m_Sprite
@@ -4374,21 +4394,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalPosition.x
       value: 0.09
-      objectReference: {fileID: 0}
-    - target: {fileID: 2143906208805383913, guid: 902a43d44318961489211df67b632007,
-        type: 3}
-      propertyPath: m_Radius
-      value: 2.11
-      objectReference: {fileID: 0}
-    - target: {fileID: 2143906208805383913, guid: 902a43d44318961489211df67b632007,
-        type: 3}
-      propertyPath: m_Offset.x
-      value: 0.15
-      objectReference: {fileID: 0}
-    - target: {fileID: 2143906208805383913, guid: 902a43d44318961489211df67b632007,
-        type: 3}
-      propertyPath: m_Offset.y
-      value: -0.83
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 1958304335383286476, guid: 902a43d44318961489211df67b632007, type: 3}
